@@ -1,4 +1,5 @@
 name: Test
+# Name of the worflow
 
 on:
   workflow_dispatch:
@@ -11,14 +12,23 @@ on:
   
 
 jobs:
-  Setup: # job name
+  Setup: # Name of the job 
     runs-on: ubuntu-latest 
     #job runs on ubuntu github runner - options for github runners - Ubuntu, Windows, MacOS or self hosted runnners 
 
     steps:
+      - name: Where am I?
+        run: ls 
+
       - name: Checkout code
         uses: actions/checkout@v3
       # checks out code from this repo 
 
+      - name: Where am I?
+        run: 
+          ls 
+          cd ..
+
       - name: Greeting
+        if: 
         run: echo "Hello, World!"
