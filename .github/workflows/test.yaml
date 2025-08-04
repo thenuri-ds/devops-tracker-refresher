@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  workflow dispatch:
+  push:
+    branches:
+      - thenuri
+  reposiitory_dispatch:
+    type: thenuri-test
+
+  
+
+jobs:
+  Setup: # job name
+    runs-on: ubuntu-latest 
+    #job runs on ubuntu github runner - options for github runners - Ubuntu, Windows, MacOS or self hosted runnners 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      # checks out code from this repo 
+
+      - name: Greeting
+        run: echo "Hello, World!"
