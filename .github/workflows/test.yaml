@@ -18,7 +18,9 @@ jobs:
 
     steps:
       - name: Where am I?
-        run: ls 
+        run: 
+          pwd
+          ls
 
       - name: Checkout code
         uses: actions/checkout@v3
@@ -26,10 +28,11 @@ jobs:
 
       - name: Where am I?
         run: 
-          ls 
+          pwd
+          ls
 
       - name: Greeting
-        if: ${{github.event_name == 'workflow_dispatch'}}
+        if: ${{github.event_name != 'workflow_dispatch'}}
         run: echo "Hello, World!"
 
   Configure:
