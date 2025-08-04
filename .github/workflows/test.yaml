@@ -27,10 +27,9 @@ jobs:
       - name: Where am I?
         run: 
           ls 
-          cd ..
 
       - name: Greeting
-        if: github.event_name == 'workflow_dispatch'
+        if: ${{github.event_name == 'workflow_dispatch'}}
         run: echo "Hello, World!"
 
   Configure:
