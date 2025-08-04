@@ -1,11 +1,11 @@
 name: Test
 
 on:
-  workflow dispatch:
+  workflow_dispatch:
   push:
     branches:
       - thenuri
-  reposiitory_dispatch:
+  repository_dispatch:
     type: thenuri-test
 
   
