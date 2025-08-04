@@ -30,5 +30,21 @@ jobs:
           cd ..
 
       - name: Greeting
-        if: 
+        if: github.event_name == 'workflow_dispatch'
+        run: echo "Hello, World!"
+
+  Configure:
+    runs-on: windows-latest
+    needs: Setup
+
+    steps:
+      - name: Greeting
+        run: echo "Hello, World!"
+
+
+  Build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Greeting
         run: echo "Hello, World!"
