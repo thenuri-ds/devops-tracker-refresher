@@ -26,8 +26,8 @@ Terraform is a push type model - the config that terraform has is getting pushed
 - Documneted Architeture - deeper understanding of archituture 
 
 # Summary
-IaC - sourcce of truth for infra configuration 
-Manual processes are the enemy - relying on manual processes to deploy environments consistenly in a repeatable fashion, at some point a step is going to be missed 
+    - IaC - sourcce of truth for infra configuration 
+    - Manual processes are the enemy: relying on manual processes to deploy environments   consistenly in a repeatable fashion, at some point a step is going to be missed 
 
 # What is Terraform?
 - Tool used to automate infrastrucutre 
