@@ -56,3 +56,8 @@ jobs:
     steps:
       - name: Greeting
         run: echo "Hello, World!"
+
+# environment variables 
+# secrets 
+# matrix, max parallel 
+# shared deployment template - inputs 
